@@ -1,0 +1,29 @@
+[project]
+name = "gomoku"
+version = "1.0.0"
+description = "五目並べ (Gomoku) – 15×15 board, PvP/AI modes, forbidden-move rules, move history."
+requires-python = ">=3.10"
+keywords = ["apps", "declarative", "game", "gomoku", "five in a row", "AI", "minimax"]
+authors = [{ name = "Flet team", email = "hello@flet.dev" }]
+dependencies = ["flet"]
+
+[dependency-groups]
+dev = ["flet-cli", "flet-desktop", "flet-web", "pytest"]
+
+[tool.flet.gallery]
+categories = ["Games", "Declarative"]
+
+[tool.flet.metadata]
+title = "Gomoku (五目並べ)"
+controls = ["SafeArea", "Row", "Column", "Container", "Stack", "Icon", "Text", "TextButton", "ElevatedButton", "RadioGroup", "Radio"]
+layout_pattern = "list-detail"
+complexity = "intermediate"
+features = ["game state", "move history", "AI opponent", "minimax", "alpha-beta pruning", "forbidden moves"]
+
+[tool.flet]
+org = "dev.flet"
+company = "Flet"
+copyright = "Copyright (C) 2023-2026 by Flet"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
